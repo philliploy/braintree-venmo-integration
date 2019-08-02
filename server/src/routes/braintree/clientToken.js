@@ -1,5 +1,6 @@
 import settings from 'config';
 import gateway from '../middleware/paymentGateway';
+import logIt from '../middleware/logIt';
 
 export default (req, res) => {
 
@@ -12,6 +13,8 @@ export default (req, res) => {
         client_token: false
       })
     }
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    logIt(`[${ip}] Generate Client Token`);
     return res.json({
       code: 200,
       clientToken: response.clientToken

@@ -6,3 +6,5 @@ ecosystem.config.js
 
 server/build
 client/build
+
+access.log

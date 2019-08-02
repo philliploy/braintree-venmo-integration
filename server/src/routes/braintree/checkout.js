@@ -1,6 +1,7 @@
 import settings from 'config';
 import gateway from '../middleware/paymentGateway';
 import braintree from 'braintree';
+import logIt from '../middleware/logIt';
 
 var TRANSACTION_SUCCESS_STATUSES = [
   braintree.Transaction.Status.Authorizing,
@@ -44,7 +45,10 @@ export default (req, res) => {
     orderId,
     device_data
   } = req.body;
-  
+
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  logIt(`[${ip}] Checkout`);
+
   gateway.transaction.sale({
     amount: 1,
     paymentMethodNonce: payment_method_nonce,
