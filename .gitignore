@@ -2,3 +2,4 @@ node_modules
 server/config/braintree.json
 push.sh
 pull.sh
+ecosystem.config.js
