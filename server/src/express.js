@@ -13,6 +13,6 @@ app.use(bodyParser.json({ limit: settings.bodyLimit }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Priority serve any static files.
-app.use(express.static(settings.staticPath, { redirect : false }));
+app.use(express.static(settings.staticPath));
 
 export default app;

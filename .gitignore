@@ -3,3 +3,6 @@ server/config/braintree.json
 push.sh
 pull.sh
 ecosystem.config.js
+
+server/build
+client/build

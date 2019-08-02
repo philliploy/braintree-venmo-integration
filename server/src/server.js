@@ -3,8 +3,6 @@ import app from './express';
 import routes from './routes/routes';
 import path from 'path';
 
-console.log('settings', settings);
-
 const PORT = process.env.PORT || settings.port;
 
 routes();
