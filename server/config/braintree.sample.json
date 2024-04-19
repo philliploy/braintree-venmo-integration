@@ -1,0 +1,6 @@
+{
+	"environment": "Sandbox",
+	"merchantId": "_ADD_HERE_merchantId",
+	"publicKey": "_ADD_HERE_publicKey",
+	"privateKey": "_ADD_HERE_privateKey"
+}
