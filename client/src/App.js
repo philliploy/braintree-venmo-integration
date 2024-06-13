@@ -12,7 +12,7 @@ class App extends React.Component {
   state = {
     venmoReady: false,
     methodLabel: 'venmo',
-    clientToken: '',
+    clientToken: 'MIIBCgKCAQEA9gOh8gQnQ805LbieNpC6QjP5GWsY3tpoY2cBs8Y7kZUinuzb6+cYlQ3vS43dycvH0omCwCJceh5d+StKw7/Sr7CM0a21n5Ayhdi3SpEpJ5KLbEiJC4EpHU1ugj6CNTpUIplMVuwiRlwGl1BXAnKK9gzR60r0ZguB2yGDqZv1Ie09resFucnK4nj5p1EfWr6T9NRb1K32S+tFAg1BY3bLeNzoj9YNbKAWSLADlN0n1X+1xRoHkoIFOQFoaRSYw38QLOBQW6yawCg2oizjkLdzyWRWQtE0/q559UwrMHXIIwB6qD1XdJyPaKOGqYhsCN2ELGmMi+DSY+qoc8tw7bSNHQIDAQAB',
     deviceData: '',
     paymentApi: '/api/v1/braintree/checkout',
     failMessage: '',
